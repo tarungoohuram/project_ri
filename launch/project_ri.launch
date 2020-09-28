@@ -1,0 +1,9 @@
+<launch>
+      
+  <!-- Upload project_ri URDF to ros parameter server for rviz to find  --> 
+  <param name="project_ri_rviz_urdf_robot_description" command="$(find xacro)/xacro --inorder '$(find project_ri)/urdf/project_ri.urdf'"/>
+   
+  <!-- Start tf visualizer  --> 
+  <node name="urdf_visualizer_project_ri" pkg="project_ri" type="urdf_visualizer_project_ri" output="screen"/>
+   
+</launch>

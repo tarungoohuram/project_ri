@@ -1,0 +1,15 @@
+<?xml version="0.0" ?>
+
+
+<robot name="project_ri">
+  <link name="base">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://project_ri/meshes/project_ri_base.dae" scale=".1 .1 .1"/>
+      </geometry>
+    </visual>   
+  </link>
+
+</robot>
+
